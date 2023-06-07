@@ -1,32 +1,32 @@
 function generateProjects() {
     let arr = [
         {
-            'image': '/images/account-ctms.png',
+            'image': 'images/account-ctms.png',
             'title': 'Cricket Tournament Management System',
             'category': 'Web Development'
         },
         {
-            'image': '/images/cpt-HomePage.png',
+            'image': 'images/cpt-HomePage.png',
             'title': 'Clearpaththinking',
             'category': 'Web Development'
         },
         {
-            'image': '/images/healingBloom_collage.jpg',
+            'image': 'images/healingBloom_collage.jpg',
             'title': 'Healing Bloom',
             'category': 'Web Development'
         },
         {
-            'image': '/images/nikon-website.png',
+            'image': 'images/nikon-website.png',
             'title': 'Nikon - Camera',
             'category': 'Web Development'
         },
         {
-            'image': '/images/real-estate.png',
+            'image': 'images/real-estate.png',
             'title': 'Bootstrap Real Estate',
             'category': 'Web Development'
         },
         {
-            'image': '/images/the-destination.png',
+            'image': 'images/the-destination.png',
             'title': 'The Destination',
             'category': 'Web Development'
         },
