@@ -1,0 +1,990 @@
+/* * {
+
+    outline: 1px solid red;
+
+} */
+
+
+
+@font-face {
+
+    font-family: myFirstFont;
+
+    src: url("/font/Pangram-Sans-Font-Family/Pangram-Light.otf");
+
+}
+
+
+
+body {
+
+    font-family: monospace;
+
+    background: #000;
+
+}
+
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+
+a.customLogo {
+
+    color: #EE2D55;
+
+    font-family: cursive;
+
+    letter-spacing: 3px;
+
+}
+
+
+
+.nav .nav-item a.nav-link {
+
+    /* font-family: myFirstFont; */
+
+    font-size: 16px;
+
+    color: #EE2D55;
+
+    letter-spacing: 0.09rem;
+
+    text-transform: lowercase;
+
+    transition: ease-out 0.6s;
+
+}
+
+
+
+.nav-link:hover {
+
+    background-color: #EE2D55 !important;
+
+    color: #fff !important;
+
+    font-weight: bold;
+
+    box-shadow: inset 200px 0 0 0 #EE2D55;
+
+}
+
+
+
+.heroSection {
+
+    height: 100vh;
+
+    background-color: #000;
+
+}
+
+
+
+.center-screen {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    min-height: 80vh;
+
+}
+
+
+
+.heroText {
+
+    /* font-family: myFirstFont; */
+
+    font-size: 36px;
+
+    color: #fff;
+
+    letter-spacing: 0.08rem;
+
+    text-transform: capitalize;
+
+}
+
+
+
+.heroTextBottom {
+
+    /* font-family: myFirstFont; */
+
+    font-size: 16px;
+
+    color: #fff;
+
+    letter-spacing: 0.05rem;
+
+    text-transform: capitalize;
+
+    max-width: 65%;
+
+    text-align: center;
+
+    padding: 0;
+
+    margin: 0 auto;
+
+}
+
+
+
+.heroBtn,
+.CTABtn,
+.CTABtn2 {
+
+    /* font-family: myFirstFont; */
+    position: relative;
+
+    overflow: hidden;
+
+    font-size: 20px;
+
+    color: #fff;
+
+    background-color: #EE2D55;
+
+    border-radius: 20px;
+
+    border: 0;
+
+    outline: 0;
+
+    height: 40px;
+
+    transition: ease-out 0.3s;
+
+}
+
+.CTABtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-animation: shine 5s ease-in-out infinite;
+    animation: shine 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes shine {
+    0% {
+        left: -100%;
+        transition-property: left;
+    }
+
+    11.5044247788%,
+    100% {
+        right: -100%;
+        transition-property: right;
+    }
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+        transition-property: left;
+    }
+
+    11.5044247788%,
+    100% {
+        left: 100%;
+        transition-property: left;
+    }
+}
+
+
+
+.resumeBtn {
+
+    font-size: 20px;
+
+    border: 1px solid #EE2D55;
+
+    background: transparent;
+
+    color: #EE2D55;
+
+    border-radius: 20px;
+
+    outline: 0;
+
+    height: 40px;
+
+    transition: ease-out 0.3s;
+
+}
+
+
+
+.resumeBtn a {
+
+    color: #EE2D55;
+
+}
+
+
+
+.resumeBtn:hover a {
+
+    color: #fff;
+
+}
+
+
+
+.resumeBtn:hover,
+.resumeBtn:focus {
+
+    background: #EE2D55;
+
+    color: #fff;
+
+}
+
+
+
+
+
+.heroBtn {
+
+    width: 30%;
+
+}
+
+
+
+.CTABtn,
+.resumeBtn,
+.CTABtn2 {
+
+    width: 100%;
+
+}
+
+
+
+.CTABtn a,
+.heroBtn a,
+.CTABtn2 a {
+
+    color: unset;
+
+    text-decoration: none;
+
+}
+
+
+
+.heroBtn:hover,
+.CTABtn:hover,
+.CTABtn2:hover,
+.heroBtn:focus,
+.CTABtn:focus,
+.CTABtn2:focus {
+
+    border: 1px solid #EE2D55;
+
+    background: transparent;
+
+    color: #EE2D55;
+
+    box-shadow: inset 200px 0 0 0 transparent;
+
+}
+
+
+
+.border-line {
+
+    border: 5px solid #707070;
+    width: 35%;
+    margin-left: auto;
+    margin-right: 7rem;
+    opacity: 0.5;
+}
+
+
+
+
+
+/* project section css */
+
+
+
+.projectSection,
+.serviceSection {
+
+    min-height: 100vh;
+
+}
+
+
+
+
+
+.projectSection .card {
+
+    border: 2px solid #EE2D55;
+
+    border-radius: 10px;
+
+    height: 360px;
+
+}
+
+
+
+.projectSection .card-body {
+
+    padding: 0.2rem;
+
+    background: #EE2D55;
+
+    color: #fff;
+
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+
+
+/* image effect  */
+
+
+
+.zoom-effect-container {
+
+    position: relative;
+
+    width: auto;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+.image-card img {
+
+    -webkit-transition: 0.4s ease;
+
+    transition: 0.4s ease;
+
+    border-top-left-radius: 8px;
+
+    border-top-right-radius: 8px;
+}
+
+
+
+
+.zoom-effect-container:hover .image-card img {
+
+    -webkit-transform: scale(1.08);
+
+    transform: scale(1.08);
+
+}
+
+
+
+
+
+/* about section */
+
+/* .aboutSection, .contactSection, .projectSection {
+
+    height: auto;
+
+} */
+
+
+
+.whoami {
+
+    color: #707070;
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+
+    font-size: 48px;
+
+    padding: 20px 0px;
+
+}
+
+
+
+.whoamiTextBottom {
+
+    font-size: 18px;
+
+    color: #fff;
+
+    letter-spacing: 0.05rem;
+
+    text-transform: capitalize;
+
+    padding: 0;
+
+    margin: 0 auto;
+
+}
+
+
+
+.aboutusRow {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-self: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+}
+
+
+
+.about_image {
+
+    width: 75%;
+
+}
+
+
+
+/* contact section */
+
+
+.contactRow {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-self: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+}
+
+
+
+/* necessary to give position: relative to parent. */
+
+.col-3 {
+
+    float: left;
+
+    width: 100%;
+
+    margin: 25px 0%;
+
+    position: relative;
+
+    /* border: none; */
+
+}
+
+
+
+.col-3_res {
+
+    margin: 10px 0% !important;
+
+    z-index: 2;
+
+}
+
+
+
+:focus {
+
+    outline: none;
+
+}
+
+
+
+.col-3 input[type="text"],
+
+.col-3 textarea[type="text"],
+
+.col-3 input[type="email"] {
+
+    color: #EE2D55;
+
+    width: 80%;
+
+    box-sizing: border-box;
+
+    letter-spacing: 1px;
+
+    background: transparent;
+
+    /* border: none; */
+
+}
+
+
+
+input[type="text"]::placeholder,
+textarea[type="text"]::placeholder,
+input[type="email"]::placeholder {
+
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+    color: #EE2D55;
+
+}
+
+
+
+.effect-16 {
+
+    padding: 4px 0;
+
+    border-bottom: 1px solid #EE2D55 !important;
+
+    background-color: transparent;
+
+    border: none;
+
+    width: 80%;
+
+}
+
+
+
+.effect-16~.focus-border {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background-color: #EE2D55;
+
+    transition: 0.4s;
+
+}
+
+
+
+.effect-16:focus~.focus-border,
+
+.has-content.effect-16~.focus-border {
+
+    width: 80%;
+
+    transition: 0.4s;
+
+}
+
+
+
+.effect-16~label {
+
+    position: absolute;
+
+    left: 0;
+
+    width: 80%;
+
+    top: 9px;
+
+    color: #EE2D55;
+
+    transition: 0.3s;
+
+    z-index: -1;
+
+    letter-spacing: 0.5px;
+
+    text-align: left;
+
+}
+
+
+
+.effect-16:focus~label {
+
+    top: -16px;
+
+    font-size: 12px;
+
+    color: #EE2D55;
+
+    transition: 0.3s;
+
+    z-index: -1;
+
+}
+
+
+
+.space {
+
+    padding: 25px 0px;
+
+}
+
+
+
+.contactHeading {
+
+    color: #EE2D55;
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+
+    font-size: 38px;
+
+    padding: 10px 0px;
+
+}
+
+
+
+.contactPara {
+
+    color: #EE2D55;
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    padding: 10px 0px;
+
+}
+
+
+
+.contactPara a,
+.contactPara~p i {
+
+    color: #EE2D55;
+
+    font-size: 24px;
+
+}
+
+
+
+.contactPara~p a {
+
+    font-size: 20px;
+
+    color: #EE2D55;
+
+    margin: 0px 10px;
+
+}
+
+
+
+.copyrightsPara {
+
+    font-size: 20px;
+
+    color: #EE2D55;
+
+    margin: 10px 0px 0px 0px;
+
+}
+
+
+
+
+
+/* service section */
+
+
+
+.card.serviceCard {
+
+    background: #EE2D55;
+
+    text-align: center;
+
+    height: 420px;
+
+    padding: 45px;
+
+    border-radius: 8px;
+
+}
+
+
+
+.card-title img {
+
+    width: 65px;
+
+    height: auto;
+
+}
+
+
+
+p.card-text {
+
+    color: #fff;
+
+    font-size: 22px;
+
+    height: 60px;
+
+}
+
+
+
+.pointService {
+
+    color: #fff;
+
+    font-size: 18px;
+
+    line-height: 32px;
+
+    text-align: left;
+
+    list-style-type: disclosure-closed;
+
+}
+
+
+
+
+
+/* mobile screen */
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .navbar-toggler {
+
+        background-color: #EE2D55;
+
+    }
+
+
+
+    .fa-bars {
+
+        color: #fff;
+
+    }
+
+
+
+    .nav {
+
+        display: inherit;
+
+        text-align: center;
+
+        background: #EE2D55;
+
+        padding: 25px;
+
+        border-radius: 20px 0px;
+
+    }
+
+
+
+    .nav .nav-item a.nav-link {
+
+        color: #fff !important;
+
+    }
+
+
+
+    .heroText {
+
+        text-align: center;
+
+    }
+
+
+
+    .CTABtn {
+
+        background-color: #fff;
+
+        color: #EE2D55;
+
+    }
+
+
+
+    .border-line {
+
+        width: 100%;
+
+    }
+
+
+
+    .heroTextBottom {
+
+        max-width: 100%;
+
+    }
+
+
+
+    .heroBtn,
+    .CTABtn2,
+    .resumeBtn {
+
+        width: 70%;
+
+        margin-top: 5px;
+
+    }
+
+
+
+    .about_image {
+
+        width: 100%;
+
+    }
+
+
+
+    .contactHeading {
+
+        text-align: center;
+
+    }
+
+
+
+    .contactPara {
+
+        font-size: 16px;
+
+    }
+
+
+
+    .contactPara a,
+    .contactPara~p i {
+
+        font-size: 20px;
+
+    }
+
+
+
+    .contactPara~p a {
+
+        font-size: 14px;
+
+    }
+
+
+
+    .copyrightsPara {
+
+        margin-top: 60px;
+
+        font-size: 16px;
+
+    }
+
+
+
+    .card.serviceCard {
+
+        margin-top: 25px;
+        height: auto;
+        padding: 20px;
+    }
+
+    p.card-text {
+
+        height: auto;
+
+    }
+
+
+
+    .projectSection .card {
+
+        height: 290px;
+        margin: 5px 0px;
+    }
+
+}
+
+.content {
+    display: none;
+}
+
+.preload {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10000;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    text-align: center;
+}
+
+
+
+
+
+/* ////////////////////////////// */
